@@ -23,7 +23,7 @@ const data = [
 // Generate content function
 const generateContent = async (req, res) => {
     try {
-        const prompt = `Your name is Bilal AI and you are an Islamic culture AI trained on the data joint ${data.join(" ")}, now give me accurate responses to this: ${req.body.prompt}` || `Hi there, please study this information: ${data.join(" ")}`; // Use Islamic context data in the prompt
+        const prompt = `Your name is Bilal AI and you are an Islamic culture AI trained on the data joint ${data.join(" ")}, now give me accurate responses to this: ${req.body.prompt}` || `Hi there, please study this information: ${data.join(" ")}, but no need to mentio your name and all that introductory information at the beginning. just go straight to my answer unless I ask you for an introduction or greeting`; // Use Islamic context data in the prompt
         // console.log("Prompt:", prompt);
 
         // Generate the content using the AI model
